@@ -1,15 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #b3cde0;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -27,13 +29,46 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+}
+
+.slides img.active {
+    display: block;
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #333;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 100px 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero h2 {
@@ -47,21 +82,27 @@ nav a {
 }
 
 .hero button {
-    background-color: #333;
+    background-color: #b3cde0;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 1em;
+    border-radius: 5px;
 }
 
 .hero button:hover {
-    background-color: #555;
+    background-color: #9bbbd4;
 }
 
 .featured-products, .categories, .testimonials {
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
+    background-color: #f9f9f9;
+}
+
+.featured-products h2, .categories h2, .testimonials h2 {
+    color: #b3cde0;
 }
 
 .product-grid, .category-grid {
@@ -73,11 +114,12 @@ nav a {
 .product, .category {
     background-color: #fff;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 200px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
@@ -85,23 +127,53 @@ nav a {
     height: auto;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h3 {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
 }
 
 button {
-    background-color: #333;
+    background-color: #b3cde0;
     color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #9bbbd4;
 }
 
 footer {
-    background-color: #333;
+    background-color: #b3cde0;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
