@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -7,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #b3cde0;
+    background-color: #84c1ff;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -59,7 +61,7 @@ nav a {
 }
 
 .hero {
-    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     position: absolute;
     top: 50%;
@@ -82,7 +84,7 @@ nav a {
 }
 
 .hero button {
-    background-color: #b3cde0;
+    background-color: #84c1ff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -92,17 +94,17 @@ nav a {
 }
 
 .hero button:hover {
-    background-color: #9bbbd4;
+    background-color: #5aa7ff;
 }
 
 .featured-products, .categories, .testimonials {
     padding: 40px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #e0f7fa;
 }
 
 .featured-products h2, .categories h2, .testimonials h2 {
-    color: #b3cde0;
+    color: #84c1ff;
 }
 
 .product-grid, .category-grid {
@@ -141,7 +143,7 @@ nav a {
 }
 
 button {
-    background-color: #b3cde0;
+    background-color: #84c1ff;
     color: #fff;
     border: none;
     padding: 10px;
@@ -151,11 +153,11 @@ button {
 }
 
 button:hover {
-    background-color: #9bbbd4;
+    background-color: #5aa7ff;
 }
 
 footer {
-    background-color: #b3cde0;
+    background-color: #84c1ff;
     color: #fff;
     text-align: center;
     padding: 20px 0;
