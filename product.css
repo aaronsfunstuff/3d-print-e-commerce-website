@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -76,41 +77,89 @@ nav a {
     margin-bottom: 20px;
 }
 
+.specs, .gallery {
+    margin-top: 30px;
+}
+
+.specs h3, .gallery h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.specs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gallery .images img {
+    max-width: 100px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.customer-reviews {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    color: #84c1ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.review p:last-child {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Button styles */
 button {
     background-color: #84c1ff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
     font-size: 1em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #5aa7ff;
+    transform: scale(1.05);
 }
 
-footer {
-    background-color: #84c1ff;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #5aa7ff;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
