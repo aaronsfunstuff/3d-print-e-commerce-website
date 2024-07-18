@@ -12,61 +12,70 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="#">Categories</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="product-page">
-            <div class="product-details">
+        <section class="product-detail">
+            <div class="product-image">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX82uXC3f70gV5M_MqAvRuBjFquTqe_K22Aw&s" alt="Premium 3D Printed Vase">
-                <div class="details">
-                    <h2>Premium 3D Printed Vase</h2>
-                    <p class="price">$29.99</p>
-                    <p class="description">Add a touch of elegance to your home with our Premium 3D Printed Vase. Crafted with precision and care, this vase is perfect for showcasing your favorite flowers.</p>
-                    <button id="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-info">
+                <h2>Premium 3D Printed Vase</h2>
+                <p class="price">$29.99</p>
+                <p class="description">
+                    Elevate your home decor with our Premium 3D Printed Vase. Crafted with the finest materials, it combines elegance and functionality.
+                </p>
+                <button class="add-to-cart" data-id="1" data-name="Premium 3D Printed Vase" data-price="29.99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX82uXC3f70gV5M_MqAvRuBjFquTqe_K22Aw&s">Add to Cart</button>
+            </div>
+        </section>
+        <section class="recommended-products">
+            <h2>Recommended Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYw8kYhzPqBKamS3UKXe9qAU6wXuK9QxroQ&s" alt="Wood Color 3D Printed Vase">
+                    <h3>Wood Color 3D Printed Vase</h3>
+                    <p>$19.99</p>
+                    <button class="add-to-cart" data-id="2" data-name="Wood Color 3D Printed Vase" data-price="19.99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYw8kYhzPqBKamS3UKXe9qAU6wXuK9QxroQ&s">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e2Uh6yyHB2OS-5otgTqjZ4XNU4c1G7Zo6g&s" alt="Modern Art 3D Print">
+                    <h3>Modern Art 3D Print</h3>
+                    <p>$39.99</p>
+                    <button class="add-to-cart" data-id="3" data-name="Modern Art 3D Print" data-price="39.99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e2Uh6yyHB2OS-5otgTqjZ4XNU4c1G7Zo6g&s">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxP4wtyeh4L6j-n7svjFVXVX1IvMXSo_11NQ&s" alt="Customizable Phone Stand">
+                    <h3>Customizable Phone Stand</h3>
+                    <p>$14.99</p>
+                    <button class="add-to-cart" data-id="4" data-name="Customizable Phone Stand" data-price="14.99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxP4wtyeh4L6j-n7svjFVXVX1IvMXSo_11NQ&s">Add to Cart</button>
                 </div>
             </div>
-            <section class="reviews">
-                <h2>Customer Reviews</h2>
-                <div class="review">
-                    <p>"Beautiful vase! Great quality and fast shipping."</p>
-                    <p>- Emily</p>
-                </div>
-                <div class="review">
-                    <p>"I love the design! It fits perfectly with my home decor."</p>
-                    <p>- Michael</p>
-                </div>
-                <!-- Add more reviews here -->
-            </section>
-            <section class="recommended-products">
-                <h2>Recommended Products</h2>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFYw8kYhzPqBKamS3UKXe9qAU6wXuK9QxroQ&s" alt="Product 1">
-                        <h3>Wood Color 3D Printed Vase</h3>
-                        <p>$19.99</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3e2Uh6yyHB2OS-5otgTqjZ4XNU4c1G7Zo6g&s" alt="Product 3">
-                        <h3>Modern Art 3D Print</h3>
-                        <p>$39.99</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <!-- Add more recommended products here -->
-                </div>
-            </section>
+        </section>
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <h3>Jane Doe</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>This vase is amazing! It looks so natural and fits perfectly with my home decor.</p>
+            </div>
+            <div class="review">
+                <h3>John Smith</h3>
+                <p>⭐⭐⭐⭐</p>
+                <p>High-quality print and beautiful design. Very satisfied with this purchase!</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 PrintCraft Designs. All rights reserved.</p>
         <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a>.</p>
     </footer>
-    <script src="product.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
+
 
